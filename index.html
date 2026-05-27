@@ -269,6 +269,7 @@ opacity:.8;
 
 <body>
 
+<!-- Background Effects -->
 <div class="moon"></div>
 
 <div class="lights">
@@ -284,23 +285,25 @@ opacity:.8;
 <div class="firework" style="top:20%; left:30%;"></div>
 <div class="firework" style="top:60%; left:75%; animation-delay:1s;"></div>
 
+<!-- PAGE 1 -->
 <div class="page" id="page1">
 <div class="card">
 <div class="logo">🕌</div>
 <h1>Eid Mubarak</h1>
-<p>✨ তোর নাম লিখ আর সুন্দর Islamic Eid Wish দেখ ❤️</p>
-<input type="text" id="nameInput" placeholder="তোর নাম লিখ...">
+<p>✨ তোমার নাম লিখ আর সুন্দর Islamic Eid Wish দেখ ❤️</p>
+<input type="text" id="nameInput" placeholder="তোমার নাম লিখ...">
 <button onclick="showWish()">ENTER</button>
 </div>
 </div>
 
+<!-- PAGE 2 -->
 <div class="page hidden" id="page2">
 <div class="card">
 <div class="logo">🌙</div>
 <h1>Eid Wishes</h1>
 <div id="wishName"></div>
 <p>
-🤲 আল্লাহ তোর জীবন সুখ, শান্তি, রহমত আর সফলতায় ভরে দিক ❤️<br>
+🤲 আল্লাহ তোমার জীবন সুখ, শান্তি, রহমত আর সফলতায় ভরে দিক ❤️<br>
 🌙 ঈদের প্রতিটা মুহূর্ত হোক আনন্দময় ✨
 </p>
 <div class="gift" onclick="showMoney()">
@@ -313,14 +316,14 @@ opacity:.8;
 </div>
 
 <div class="footer">
-Made With ❤️ For Eid
+Made With ❤️ By Hasibul
 </div>
 
 <script>
 function showWish(){
 let name = document.getElementById("nameInput").value;
 if(name.trim() == ""){
-alert("আগে নাম লিখ 😒");
+alert("আগে নাম লিখুন 😒");
 return;
 }
 document.getElementById("wishName").innerHTML = "🌟 " + name;
@@ -340,4 +343,3 @@ navigator.vibrate([200,100,200]);
 
 </body>
 </html>
-
